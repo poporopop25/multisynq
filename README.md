@@ -1,4 +1,4 @@
-# 🧠 Multisyqn OneTap Build
+# 🧠 Multisynq OneTap Build
 
 A one-tap deployment setup for running a Multisynq node using the `synchronizer` CLI. Easily initialize, configure, and manage your node and web dashboard as system services.
 
@@ -80,14 +80,14 @@ If you're running your Multisyqn node on a VPS and want to access the web dashbo
 * **Destination address:** `127.0.0.1`
 * **Destination port number:** `3000`
 
-![Termius Port Forwarding Example](./image.png)
+![Termius Port Forwarding Example](./synq%20termius.png)
 
 Once set up, you can visit ```127.0.0.1:3000``` in your browser to access the Multisyqn dashboard hosted on your VPS.
-![Syncqchronizer Dashboard Example](./pogi.png)
+![Syncqchronizer Dashboard Example](./synq%20tab.jpg)
 ---
-## 🔄 Updating to synchronizer-cli\@2.0.8
+## 🔄 Updating to synchronizer-cli\@2.0.12
 
-To update your synchronizer CLI to the latest version (2.0.8), run the following commands:
+To update your synchronizer CLI to the latest version (2.0.12), run the following commands:
 
 ```bash
 sudo systemctl stop synchronizer-cli
@@ -99,7 +99,7 @@ sudo systemctl start synchronizer-cli
 sudo systemctl enable synchronizer-cli-web
 sudo systemctl start synchronizer-cli-web
 ```
-![version (2.0.8)](./potaa.png)
+![version (2.0.8)](./synq%20version.jpg)
 ---
 
 
@@ -110,7 +110,7 @@ To view real-time logs:
 ```bash
 journalctl -u synchronizer-cli -f
 ```
-![Logs in systemd Example](./imahe.jpg)
+![Logs in systemd Example](./synq%20logs.jpg)
 ---
 
 ## 📁 File Locations
@@ -130,8 +130,8 @@ If you encounter issues:
 
 * Double-check your Synq key and wallet credentials.
 * Use `journalctl` logs for debugging.
-* Reach out to the [Multisynq Discord](https://discord.gg/5PhnYm5z) or create an issue in this repo.
-* Use me referral to support me: [startsynqing](https://www.startsynqing.com/?ref=0bac73-w8yp5o)
+* Reach out to the [Multisynq Discord](https://discord.gg/JCnSJaMCtc) or create an issue in this repo.
+* Use me referral to support me: [startsynqing](https://www.startsynqing.com/?ref=e9ab44-m8164o)
 * community code: 
 ```bash 
    testthree
