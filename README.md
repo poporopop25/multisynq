@@ -21,6 +21,37 @@ A one-tap deployment setup for running a Multisynq node using the `synchronizer`
 
   * Synq Key
   * Wallet Address & Password
+---
+## 🧰 Initial Setup (if needed)
+
+If your VPS does **not** already have **Node.js** and **Docker**, install them first:
+
+### ✨ Recommended System Packages
+```bash
+sudo apt-get update && sudo apt-get upgrade -y
+```
+
+```bash
+sudo apt install curl iptables build-essential git wget lz4 jq make gcc nano automake autoconf tmux htop nvme-cli libgbm1 pkg-config libssl-dev libleveldb-dev tar clang bsdmainutils ncdu unzip libleveldb-dev screen -y
+```
+### 🟢 Install Latest Node.js (Global)
+
+```bash
+sudo apt update
+sudo apt install -y curl
+curl -fsSL https://deb.nodesource.com/setup_current.x | sudo -E bash -
+sudo apt install -y nodejs
+node -v
+npm -v
+```
+
+### 🐳 Install Latest Docker
+
+```bash
+source <(wget -O - https://raw.githubusercontent.com/frianowzki/installer/main/docker.sh)
+```
+
+If Node.js and Docker are already installed, skip this section and continue to the installation.
 
 ---
 
@@ -85,9 +116,9 @@ If you're running your Multisyqn node on a VPS and want to access the web dashbo
 Once set up, you can visit ```127.0.0.1:3000``` in your browser to access the Multisyqn dashboard hosted on your VPS.
 ![Syncqchronizer Dashboard Example](./synq%20tab.jpg)
 ---
-## 🔄 Updating to synchronizer-cli\@2.0.12
+## 🔄 Updating to synchronizer-cli\@2.6.1
 
-To update your synchronizer CLI to the latest version (2.0.12), run the following commands:
+To update your synchronizer CLI to the latest version (2.6.1), run the following commands:
 
 ```bash
 sudo systemctl stop synchronizer-cli
@@ -99,7 +130,7 @@ sudo systemctl start synchronizer-cli
 sudo systemctl enable synchronizer-cli-web
 sudo systemctl start synchronizer-cli-web
 ```
-![version (2.0.8)](./synq%20version.jpg)
+![version (2.2.6)](./synq%20version.jpg)
 ---
 
 
@@ -134,7 +165,7 @@ If you encounter issues:
 * Use me referral to support me: [startsynqing](https://www.startsynqing.com/?ref=e9ab44-m8164o)
 * community code: 
 ```bash 
-   testthree
+   drinktheblue
    ```
 
 ---
